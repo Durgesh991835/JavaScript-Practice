@@ -28,7 +28,14 @@ addoptiLanguage("Java")
 
  // Edit
 
- const 
+  const secondLang = document.querySelector("li:nth-child(2)")
+  const newli=document.createElement('li');
+  newli.textContent= "MOJO"
+  secondLang.replaceWith(newli)
+
+  //Edit
+  const firstLang = document.querySelector("li:first-child")
+  firstLang.outerHTML='<li>Typescript</li>'
  </script>
 
 
